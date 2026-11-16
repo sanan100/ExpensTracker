@@ -37,7 +37,7 @@ def updateExpense(expensID,title,amount,category):
     expenses = loadExpenses()
     for i in expenses:
         if i["id"] == expensID:
-            i["title"] = validateTitle(title) = validateTitle(title)
+            i["title"] = validateTitle(title)
             i["category"] = validateCategory(title)
             i["amount"] = validateAmount(title)
 
