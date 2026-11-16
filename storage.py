@@ -16,7 +16,7 @@ def loadExpenses():
 def saveExpenses(expense):
   try:
     with open(DATA_FILE,"w",encoding="utf-8") as file:
-      json.dump(expense,f,indent=4,ensure_ascii=False)
+      json.dump(expense,file,indent=4,ensure_ascii=False)
       print("data succesful saved")
   except Exception as e:
     print("Error found:",e)
